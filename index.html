@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="blackjack">
+        <header class="blackjack__header">
+          <h1 class="blackjack__header-title">backjack</h1>
+        </header>
+        <div class="blackjack__container">
+          <div class="flex">
+            <button data-btn-nuevo class="blackjack__button blackjack__button--red">
+              nuevo juego
+            </button>
+            <button data-btn-pedir disabled class="blackjack__button blackjack__button--blue">
+              pedir carta
+            </button>
+            <button data-btn-detener disabled class="blackjack__button blackjack__button--blue">
+              detener
+            </button>
+          </div>
+          <p class="blackjack__subtitle">Jugador 1 - <span data-puntos-jugador>0</span></p>
+          <div data-cartas-jugador class="flex flex--left mb-3">
+          </div>
+          <p class="blackjack__subtitle">Computadora - <span data-puntos-pc>0</span></p>
+          <div data-cartas-pc class="flex flex--left mb-3">
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
